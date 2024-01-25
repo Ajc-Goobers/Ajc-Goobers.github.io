@@ -21,9 +21,9 @@
   <meta name="robots" content="index, follow, noarchive">
   <meta name="googlebot" content="noarchive">
 
-  <link rel="stylesheet" type="text/css" href="./stuff/html.css" media="screen, projection, tv ">
-  <link rel="stylesheet" type="text/css" href="./stuff/layout.css" media="screen, projection, tv">
-  <link rel="stylesheet" type="text/css" href="./stuff/print.css" media="print">
+  <link rel="stylesheet" type="text/css" href="../stuff/html.css" media="screen, projection, tv ">
+  <link rel="stylesheet" type="text/css" href="../stuff/layout.css" media="screen, projection, tv">
+  <link rel="stylesheet" type="text/css" href="../stuff/print.css" media="print">
 
 </head>
 
@@ -36,17 +36,17 @@
       <h1>PMC</h1>
       <h2></h2>
     </div>
-    <img src="./stuff/balloons.gif" alt="balloons" class="balloons"> <img src="./stuff/header_left.jpg" alt="left slice" class="left"> 
-    <img src="./stuff/header_right.jpg" alt="right slice" class="right"> </div>
+    <img src="../stuff/balloons.gif" alt="balloons" class="balloons"> <img src="../stuff/header_left.jpg" alt="left slice" class="left"> 
+    <img src="../stuff/header_right.jpg" alt="right slice" class="right"> </div>
 
 
 
   <!-- MAIN MENU: Top horizontal menu of the site.  Use class="here" to turn the current page tab on -->
   <div id="mainMenu">
     <ul class="floatRight">
-      <li><a href="index.html" title="Home page" class="last">Home</a></li>
-      <li><a href="news.html" title="Latest Posts" class="here">Posts</a></li>
-      <li><a href="archive.html" title="User info archive" class="last">Archive</a></li>
+      <li><a href="/index.html" title="Home page" class="last">Home</a></li>
+      <li><a href="/news.html" title="Latest Posts" class="here">Posts</a></li>
+      <li><a href="/archive.html" title="User info archive" class="last">Archive</a></li>
       <li><a href="mailto:mypylogger13@gmail.com" title="Get in touch" class="last">Contact</a></li>
     </ul>
   </div>
@@ -61,8 +61,8 @@
         <li class="here">
         </li>
         <li><a href="https://github.com/PoopMonkeyCult/PMC-Hub" title="Download PMC Hub">PMC Hub</a></li>
-        <li><a href="archive.html" title="Goto Archive">Archive</a></li>
-        <li><a href="news.html" title="Latest Posts">Posts</a></li>
+        <li><a href="/archive.html" title="Goto Archive">Archive</a></li>
+        <li><a href="/news.html" title="Latest Posts">Posts</a></li>
       </ul>
 
       <p>
@@ -82,15 +82,40 @@
 
 
     <div class="width75 floatRight">
-      <div class="gradient">
-        <a name="fluidity"></a>
-        <h1>Color glitch when setting Ajc window to certain resolution</h1>
-        <p>
-          I've recently discovered that if you set the window size on startup in the config.json file, after logging in it will set your player color to an Icy Blue look as shown below, and no this is not only client-s...
-        </p>
-        <a href="newsposts/colorglitch.html">view more</a>
-      </div>
+        <div class="gradient">
+          <a name="fluidity"></a>
+          <h1>Color glitch when setting Ajc window to certain resolution</h1>
+          <p>
+            I've recently discovered that if you set the window size on startup in the config.json file, after logging in it will set your player color to an Icy Blue look as shown below, and no this is not only client-sided. 
+          </p>
+          <h6>Example by jammer Epicfeatheredarmor</h6>
+          <img src="https://cdn.discordapp.com/attachments/1199796744091865221/1199799145318322277/image.png?ex=65c3db07&is=65b16607&hm=3e4b0ebd18c3c1db3e0eb1d86cbe8ef047067e23e796495b7808515a4fa21320&">
 
+          <p>
+            You can replicate this look with the resolution shown. The x and y values shouldn't matter.
+          </p>
+          <code>
+            "window": {
+                "width": 1800,
+                "height": 1100,
+                "x": 959,
+                "y": 230,
+                "state": "windowed"
+            }
+          </code>
+          <p>
+            I don't believe this is a default color you can set within the game, so have fun!
+          </p>
+        </div>
+      
+        <script src="https://utteranc.es/client.js"
+          repo="poop-monkey-cult/poop-monkey-cult.github.io"
+          issue-term="pathname"
+          theme="gruvbox-dark"
+          crossorigin="anonymous"
+          async>
+        </script>
+      </div>
 
   </div>
 
@@ -102,9 +127,9 @@
 
   <div id="width"> <span class="floatLeft"> Discord <a href="https://discord.gg/JFPjQNGNXF" title="Our Discord server"> server</a> 
     <span class="grey">|</span> Github <a href="https://github.com/Poop-Monkey-Cult/" title="Our GitHub account"> organization</a>
-    </span> <span class="floatRight"> <a href="index.html" title="Home">Home</a> 
+    </span> <span class="floatRight"> <a href="/index.html" title="Home">Home</a> 
     <span class="grey">|</span> <a href="mailto:mypylogger13@gmail.com" title="Contact us">Contact</a> 
-    <span class="grey">|</span> <a href="archive.html" title="View the user info archive">Archive</a>
+    <span class="grey">|</span> <a href="/archive.html" title="View the user info archive">Archive</a>
 	<span class="grey">|</span> 
 PMC 2023-2024
     </span> </div>
